@@ -19,7 +19,7 @@ jobs:
                 operating-system:
                     - "macos-latest"
                 extensions: 
-                    - bcmath,bz2,calendar,ctype,curl,dom,exif,fileinfo,filter,gd,gmp,iconv,xml,mbstring,mbregex,mysqlnd,openssl,pcntl,pdo,pdo_mysql,pdo_sqlite,phar,posix,redis,session,simplexml,soap,sockets,sqlite3,tokenizer,xmlwriter,xmlreader,zlib,zip
+                    - bcmath,bz2,calendar,ctype,curl,dom,exif,fileinfo,filter,ftp,gd,gmp,iconv,xml,mbstring,mbregex,mysqlnd,openssl,pcntl,pdo,pdo_mysql,pdo_sqlite,phar,posix,redis,session,simplexml,soap,sockets,sqlite3,tokenizer,xmlwriter,xmlreader,zlib,zip
 
         steps:
             - name: "Checkout"
@@ -75,6 +75,4 @@ jobs:
                   name: php-${{ matrix.php-version }}-${{ env.OS }}
                   path: |
                       buildroot/bin/php
-                      buildroot/bin/php-fpm
-                      buildroot/bin/micro.sfx
                   if-no-files-found: error
