@@ -19,7 +19,7 @@ jobs:
                 operating-system:
                     - "macos-latest"
                 extensions: 
-                    - bcmath,bz2,calendar,ctype,curl,dom,exif,fileinfo,filter,ftp,gd,freetype,libjpeg,libwebp,libavif,gmp,iconv,xml,mbstring,mbregex,mysqlnd,openssl,pcntl,pdo,pdo_mysql,pdo_sqlite,phar,posix,redis,session,simplexml,soap,sockets,sqlite3,tokenizer,xmlwriter,xmlreader,zlib,zip
+                    - bcmath,bz2,calendar,ctype,curl,dom,exif,fileinfo,filter,ftp,gd,libjpeg,libwebp,libavif,gmp,iconv,xml,mbstring,mbregex,mysqlnd,openssl,pcntl,pdo,pdo_mysql,pdo_sqlite,phar,posix,redis,session,simplexml,soap,sockets,sqlite3,tokenizer,xmlwriter,xmlreader,zlib,zip
 
         steps:
             - name: "Checkout"
